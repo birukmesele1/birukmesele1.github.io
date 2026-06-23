@@ -1,72 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Biruk Mesele | Cyber AI Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="loader">
+        <div class="loader-content">
+          <h1 class="logo-text">Biruk</h1>
+      
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+      
+          <p id="loading-text">Loading 0%</p>
+        </div>
+      </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biruk mesele| Futuristic Portfolio</title>
 
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <img src="assets/profile.jpg">
 
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- MATRIX BACKGROUND -->
-<canvas id="matrix"></canvas>
+<!-- 3D BACKGROUND CANVAS -->
+<canvas id="bg"></canvas>
 
-<!-- BOOT LOADER -->
-<div id="loader">
-  <div class="hack-text">
-    <p>> booting system...</p>
-    <p>> loading neural network...</p>
-    <p>> verifying identity...</p>
-    <p id="done">ACCESS GRANTED ✔</p>
-  </div>
-</div>
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-glow"></div>
 
-<!-- HERO -->
-<section class="hero">
+<!-- NAVBAR -->
+<header>
+  <div class="logo">Biruk Mesele </div>
 
-  <div class="hero-left">
-    <h1 class="glitch">BIRUK Mesele</h1>
-    <h2>AI Student | Cyber Learner</h2>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-    <p class="terminal">
-      > born in awash<br>
-      > AI enthusiast<br>
-      > future machine learning engineer
+  <div class="toggle-mode">🌙</div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+
+  <div class="hero-text" data-aos="fade-right">
+    <h1>Hi, I'm <span>Biruk Mesele Yilma</span></h1>
+
+    <h2>
+      <span id="typing"></span>
+    </h2>
+
+    <p>
+      Aspiring AI Engineer | Python Learner | Future Machine Learning Developer
     </p>
 
-    <div class="buttons">
-      <a href="#contact">Contact Me</a>
-      <a href="#certificates">View Certificates</a>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="#certificates" class="btn outline">View Certificates</a>
     </div>
-  </div>
 
-  <div class="hero-right">
-    <div class="holo-card">
-      <img src="assets/profile.jpg" alt="biruk">
-    </div>
-  </div>
 
-</section>
+    <section class="hero">
+
+      <div class="hero-text">
+    
+        <h1>
+          Hi, I'm Biruk
+        </h1>
+    
+        <h2>
+          Future AI Engineer
+        </h2>
+    
+        <p>
+          I am passionate about AI, programming,
+          data science and building future technology.
+        </p>
+    
+      </div>
+    
+    
+      <div class="hero-image">
+    
+        <img src="assets/profile.jpg.jpg" alt="Biruk">
+    
+      </div>
+    
+    
+    </section>
 
 <!-- ABOUT -->
-<section id="about">
-  <h2 class="title">ABOUT SYSTEM</h2>
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
   <p>
-    I am Biruk Mesele Yilma, a Grade 9 student from Awash, Ethiopia.
-    I study AI, Python, Data Science, and modern programming systems.
+    I am a Grade 9 student from Awash, Afar, Ethiopia passionate about Artificial Intelligence,
+    Data Science, and Software Development. I am currently building strong skills in Python,
+    AI systems, and web development.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-  <h2 class="title">SKILLS MATRIX</h2>
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
 
-  <div class="grid">
+  <div class="skills-grid">
     <div>HTML</div>
     <div>CSS</div>
     <div>JavaScript</div>
@@ -79,55 +128,94 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
-  <h2 class="title">SYSTEM EXPERIENCE</h2>
+<section id="experience" data-aos="fade-up">
+  <h2>Experience</h2>
 
   <div class="card">
-    <p>GCA Ethiopia Training Member</p>
-    <p>Event Coordinator - School</p>
-    <p>Blood Bank Organizer</p>
+    <h3>GCA Ethiopia</h3>
+    <p>Short-term training member</p>
+  </div>
+
+  <div class="card">
+    <h3>Nemelefen High School</h3>
+    <p>Event Coordinator</p>
+  </div>
+
+  <div class="card">
+    <h3>Blood Bank Program</h3>
+    <p>Event Coordinator</p>
   </div>
 </section>
 
 <!-- CERTIFICATES -->
-<section id="certificates">
-  <h2 class="title">CERTIFICATE VAULT</h2>
+<section id="certificates" data-aos="fade-up">
+  <h2>Certificates</h2>
 
-  <div class="grid">
-    <div>AI Fundamentals</div>
-    <div>Leadership Planning</div>
-    <div>Child Protection</div>
-    <div>Effective Leadership</div>
-    <div>Data Science</div>
+  <div class="cert-grid">
+    <div class="cert">Artificial Intelligence Fundamentals</div>
+    <div class="cert">Leadership for Planning & Decision Making</div>
+    <div class="cert">Child Protection System Strengthening</div>
+    <div class="cert">Effective Leadership</div>
+    <div class="cert">Data Science and Analysis</div>
   </div>
 </section>
 
 <!-- BLOG -->
-<section id="blog">
-  <h2 class="title">AI LOGS</h2>
-  <p>My AI learning journey will be documented here.</p>
+<section id="blog" data-aos="fade-up">
+  <h2>Blog</h2>
+  <p>My learning journey in AI, Python, and technology will be shared here soon.</p>
 </section>
 
+<div class="youtube">
+
+  <iframe
+  width="100%"
+  height="315"
+  src="https://www.youtube.com/embed/TK0ERlbF_jE?rel=0"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+  </iframe>
+  
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <p>🚀 Projects Coming Soon</p>
+</section>
+
+  </div>
+
 <!-- CONTACT -->
-<section id="contact">
-  <h2 class="title">CONTACT TERMINAL</h2>
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
 
   <form>
-    <input type="text" placeholder="Enter Name">
-    <input type="email" placeholder="Enter Email">
-    <textarea placeholder="Message"></textarea>
-    <button>Send</button>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
   </form>
 
-  <div class="info">
+  <div class="contact-info">
     <p>Email: birukmesele99@gmail.com</p>
-    <p>GitHub: birukmesele1</p>
-    <p>Telegram: Burak_the_great</p>
+    <p>Phone: +251993356464</p>
+    <p><a href="https://www.linkedin.com/in/biruk-mesele-433602310">LinkedIn</a></p>
+    <p><a href="https://github.com/birukmesele1">GitHub</a></p>
+    <p><a href="https://t.me/Burak_the_great">Telegram</a></p>
   </div>
 </section>
 
-<script src="js/matrix.js"></script>
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script src="js/main.js"></script>
+<script src="js/three-bg.js"></script>
 
 </body>
-</html>
+</html>     
